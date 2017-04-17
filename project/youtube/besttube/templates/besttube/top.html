@@ -1,48 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Top Video</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-
-    <style>.block1 {
-        color: darkblue;
-        text-align: center;
-        ffont-family: 'Indie Flower', cursive;
-        font-weight: 300;
-    }</style>
-</head>
-<body>
-<div class="block1">
-    <h1>Page of top video<br/></h1>
-    <div class="block1">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/vnsUpM7R5Ag" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div class="block1">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/V-Cb9x70gYQ" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div class="block1">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/g5dH_KbMzjw" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-
-</body>
-</html>
-
-
-
-
-{#{% extends "base.html" %}#}
-{##}
-{#{% block title %}Articles for {{ year }}{% endblock %}#}
-{##}
-{#{% block content %}#}
-{#<h1>Articles for {{ year }}</h1>#}
-{##}
-{#{% for article in article_list %}#}
-{#    <p>{{ article.headline }}</p>#}
-{#    <p>By {{ article.reporter.full_name }}</p>#}
-{#    <p>Published {{ article.pub_date|date:"F j, Y" }}</p>#}
-{#{% endfor %}#}
-{#{% endblock %}#}
+{% if latest_question_list %}
+    <ul>
+    {% for question in latest_question_list %}
+        <li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}

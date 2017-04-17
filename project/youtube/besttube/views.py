@@ -1,18 +1,22 @@
-from django.shortcuts import render
-from .models import *
-from django.views import View
-
-# Create your views here.
+from django.shortcuts import get_object_or_404, render
+from .models import BestVideo
+from django.views import generic
 
 
-def top1(request, *args, **kwargs):
-    top_list = BestVideo.objects.all()
+class IndexView(generic.ListView):
+    template_name = 'besttube/top.html'
+    context_object_name = 'top_video_list'
 
-    return render(request, "besttube/top.html", locals())
+    def get_queryset(self):
+        return video_id.object.order_by('-pub_date')[:5]
 
 
-class TopView(View):
 
-    def get(self, request, *args, **kwargs):
-        return HttpResponse('hello')
+class DetailView(generic.DetailView):
+    model = BestVideo
+    template_name = 'besttube/detail.html'
 
+
+class ResultsView(generic.DetailView):
+    model = BestVideo
+    template_name = 'besttube/results.html'

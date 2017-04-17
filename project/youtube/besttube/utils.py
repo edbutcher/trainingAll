@@ -6,7 +6,6 @@ import json
 
 
 def game_video_list(game):
-    """ Get channel's upload videos| 50 limit"""
 
     youtube_link = {ссылка на канал вводится пользователем}
 
