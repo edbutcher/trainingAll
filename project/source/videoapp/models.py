@@ -9,8 +9,15 @@ class Video(models.Model):
     video_views = models.IntegerField(default=0)
     video_date = models.DateTimeField('date published')
 
+    def __str__(self):
+        return self.video_name
+
+
 class Comment(models.Model):
     class Meta:
         db_table = 'comment'
     comment = models.TextField()
     comment_video = models.ForeignKey(Video)
+
+    def __str__(self):
+        return self.comment_video

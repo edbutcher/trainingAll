@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the video index.")
+    return render(request, 'videoapp/home.html')
 
 
 def detail(request, video_name):
