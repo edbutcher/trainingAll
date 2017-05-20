@@ -19,8 +19,8 @@
 #     if some_list[2][0] == some_list[1][1] == some_list[0][2]:
 #         a += 10
 #     return a
-
-x = [[1,1,1],[1,1,1],[1,1,1]]
+#
+#x = [[1,1,1],[1,1,1],[1,1,1]]
 # print(Game(x))
 
 
@@ -42,7 +42,7 @@ GameFast(x)
 # a = 3
 # b = 5
 # r = 0 # Чтобы было, чем заполнять
-# mas = [] 
+# mas = []
 # for i in range(a):
 # mas.append([])
 # for j in range(b):
