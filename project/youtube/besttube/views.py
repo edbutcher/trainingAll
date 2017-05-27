@@ -4,11 +4,13 @@ from django.views import generic
 
 
 class IndexView(generic.ListView):
-    template_name = 'besttube/top.html'
-    context_object_name = 'top_video_list'
+    # template_name = 'besttube/top.html'
+    # context_object_name = 'top_video_list'
+
 
     def get_queryset(self):
-        return video_id.object.order_by('-pub_date')[:5]
+        video = BestVideo.objects.order_by('-pubdate')[:5]
+        return ('index.html', video)
 
 
 
