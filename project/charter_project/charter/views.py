@@ -1,11 +1,9 @@
 from django.shortcuts import render
 from .models import DataBase
+import json
 
 
 def index(request):
-    data_list = []
-    a = DataBase.objects.filter(region='kyivska')
-    for data in a:
-        data_list.append(data.value)
-    context = {'data_list': data_list}
+    a = json.dumps(list(DataBase.objects.values()))
+    context = {'a': a}
     return render(request, 'charter/charts.html', context)
