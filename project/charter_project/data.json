@@ -1,0 +1,104 @@
+{
+    "data": [
+        {
+            "region": "kyivska",
+            "town": "kiev",
+            "value":321
+        },
+        {
+            "region": "kyivska",
+            "town": "bila tserkva",
+            "value":245
+        },
+        {
+            "region": "kyivska",
+            "town": "brovary",
+            "value":164
+        },
+        {
+            "region": "kyivska",
+            "town": "boryspil",
+            "value":123
+        },
+        {
+            "region": "kyivska",
+            "town": "fastiv",
+            "value":127
+        },
+        {
+            "region": "kyivska",
+            "town": "irpin",
+            "value":112
+        },
+        {
+            "region": "kyivska",
+            "town": "buchs",
+            "value":156
+        },
+        {
+            "region": "kyivska",
+            "town": "vorzel",
+            "value":134
+        },
+        {
+            "region": "lvivska",
+            "town": "lviv",
+            "value":341
+        },
+        {
+            "region": "lvivska",
+            "town": "gorodok",
+            "value":241
+        },
+        {
+            "region": "lvivska",
+            "town": "busk",
+            "value":141
+        },
+        {
+            "region": "lvivska",
+            "town": "stryi",
+            "value":121
+        },
+        {
+            "region": "lvivska",
+            "town": "zolochiv",
+            "value":321
+        },
+        {
+            "region": "lvivska",
+            "town": "sambi",
+            "value":291
+        },
+        {
+            "region": "odesska",
+            "town": "odessa",
+            "value":342
+        },
+        {
+            "region": "odesska",
+            "town": "chornomorsk",
+            "value":322
+        },
+        {
+            "region": "odesska",
+            "town": "izmail",
+            "value":272
+        },
+        {
+            "region": "odesska",
+            "town": "podilsk",
+            "value":262
+        },
+        {
+            "region": "odesska",
+            "town": "teplodar",
+            "value":252
+        },
+        {
+            "region": "odesska",
+            "town": "yuzhne",
+            "value":242
+        }
+    ]
+}
